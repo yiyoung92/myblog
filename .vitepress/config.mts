@@ -15,7 +15,7 @@ export default defineConfig({
   title: "BeginnerParents",
   description: "手爸妈的快乐花园，分享收获、记录生活",
   cleanUrls: true, // 启用清洁URL
-  ignoreDeadLinks: false, //关闭忽略死链，不配置即可，非常不建议设置为true
+  ignoreDeadLinks: true, //关闭忽略死链，不配置即可，非常不建议设置为true
   lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳 //
    //启用深色模式
   appearance:'dark', 
