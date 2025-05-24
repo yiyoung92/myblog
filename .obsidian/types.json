@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Ctime": "text",
+    "备注": "text",
+    "cday": "text",
+    "date": "text",
+    "key words": "multitext",
+    "key-words": "multitext"
+  }
+}
