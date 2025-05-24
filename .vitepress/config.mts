@@ -5,7 +5,8 @@ import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
 // 引入导航配置,搜索配置，侧边栏配置，vite配置
 import { nav,search,sidebar,vite } from './configs'
-
+// 引入mark 高亮插件
+import mark from 'markdown-it-mark'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -34,7 +35,8 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(BiDirectionalLinks()) ,// 双链
-      md.use(markdownItTaskCheckbox) //todo
+      md.use(markdownItTaskCheckbox), //todo
+      md.use(mark) //mark高亮
     },
     image: {
       // 开启图片懒加载

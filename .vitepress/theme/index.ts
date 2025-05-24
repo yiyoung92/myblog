@@ -18,6 +18,8 @@ import {
 
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css' 
 
+// mark 高亮特效
+import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 // 标签组件
 const Tags = () => {
   const { frontmatter } = useData()
