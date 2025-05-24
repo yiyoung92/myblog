@@ -60,7 +60,7 @@ export default defineConfig({
     //移动端侧边栏文字更改 //
     sidebarMenuLabel:'目录', 
     //移动端返回顶部文字修改 //
-  
+    returnToTopLabel: '返回顶部',
     //侧边栏配置
     sidebar,
 
