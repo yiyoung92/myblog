@@ -1,0 +1,72 @@
+/* var.css */
+/* 如下，设置主题色 */
+:root {
+  --vp-c-brand-1: #18794e; /* 设置字体的主题颜色固定为绿色 */
+  --vp-c-brand-2: #299764;
+  --vp-c-brand-3: #30a46c;
+}
+
+.dark {
+  --vp-c-brand-1: #3dd68c;
+  --vp-c-brand-2: #30a46c;
+  --vp-c-brand-3: #298459;
+}
+/* 以前的vp-c-brand已弃用 */
+
+:root {
+  /* hero标题渐变色 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+
+  /*hero logo背景渐变色 */
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%,#41d1ff 50% );
+  --vp-home-hero-image-filter: blur(40px);
+}
+
+/* 引入标题所需要的字体，字体文件拷贝到/public路径 */
+@font-face {
+  font-family: Cabin-BoldItalic;
+  src: url(/Cabin-BoldItalic.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+/* 首页标题样式 */
+.VPHomeHero > .container > .main > h1 {
+  font-size: 5rem;
+  font-family: 'Cabin-BoldItalic';
+}
+
+/**
+  主页 节目收听 链接按钮样式
+*/
+.VPHero.VPHomeHero .actions a[href="https://www.xiaoyuzhoufm.com/podcast/669de5fe1ece2fb340e6c76f?s=eyJ1IjogIjYxMjA0ZWY1ZTBmNWU3MjNiYmVjN2NiMyJ9"] {
+  color: #6972d4;
+  border: 2px #6972d4 solid;
+  background-color: transparent;
+}
+
+.VPHero.VPHomeHero .actions a[href="https://www.xiaoyuzhoufm.com/podcast/669de5fe1ece2fb340e6c76f?s=eyJ1IjogIjYxMjA0ZWY1ZTBmNWU3MjNiYmVjN2NiMyJ9"]:hover {
+  color: white;
+  background-color: #6975f2;
+}
+
+.VPHero.VPHomeHero .actions a[href="https://www.xiaoyuzhoufm.com/podcast/669de5fe1ece2fb340e6c76f?s=eyJ1IjogIjYxMjA0ZWY1ZTBmNWU3MjNiYmVjN2NiMyJ9"]:active {
+  color: white;
+  background-color: #404eed;
+}
+
+/* 也可自行单独修改brand按钮 */
+/* :root {
+  --vp-button-brand-border: #F6CEEC;
+  --vp-button-brand-text: #F6CEEC;
+  --vp-button-brand-bg: #D939CD;
+
+  --vp-button-brand-hover-border: #F6CEEC;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #D939CD;
+
+  --vp-button-brand-active-border: #F6CEEC;
+} */
+

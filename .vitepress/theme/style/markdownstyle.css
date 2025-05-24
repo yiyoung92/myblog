@@ -1,0 +1,80 @@
+/* 引入标题所需要的字体，字体文件拷贝到/public路径 */
+@font-face {
+  font-family: Cabin-Bold;
+  src: url(/Cabin-Bold.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+/* markdown文件标题样式设置 */
+/* 白天模式（默认）暖红色 */
+.VPDoc h1 {
+  background: -webkit-linear-gradient(10deg, #ff6f61 95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Cabin-Bold', '思源黑体';
+}
+/* 黑夜模式 标题：蛋黄色 */
+.dark .VPDoc h1 {
+  background: -webkit-linear-gradient(10deg, #ffe082 95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Cabin-Bold', '思源黑体';
+}
+
+
+
+/* h2 标题：青绿色 */
+.VPDoc h2 {
+  background: -webkit-linear-gradient(10deg, #34d399 10%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Cabin-Bold', '思源黑体';
+}
+
+/* h3 标题：黄绿色 */
+.VPDoc h3 {
+  background: -webkit-linear-gradient(10deg, #ff9800 10%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Cabin-Bold', '思源黑体';
+}
+
+/* h3 黑夜模式 标题：橘色 */
+.dark .VPDoc h3 {
+  background: -webkit-linear-gradient(10deg, #bef264 10%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Cabin-Bold', '思源黑体';
+}
+
+/* 链接样式：浅紫色 */
+.VPDoc a {
+  color: #b39ddb;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.VPDoc a:hover {
+  color: #9575cd;
+}
+
+/* 标签样式 */
+.vp-tags {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.vp-tag {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.1em 0.7em;
+  background: rgba(179, 157, 219, 0.1);
+  color: #b39ddb;
+  border-radius: 999px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
