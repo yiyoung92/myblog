@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "页面测试.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "页面测试"
+              "title": "index"
             }
           }
         ]
@@ -136,13 +136,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "页面测试.md",
+                "file": "index.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "页面测试 的大纲"
+              "title": "index 的大纲"
             }
           },
           {
@@ -193,8 +193,8 @@
   },
   "active": "284a4f0fb6178eaf",
   "lastOpenFiles": [
-    "index.md",
     "页面测试.md",
+    "index.md",
     "attachments/小脚.jpg",
     "attachments/暴暴.jpg",
     "attachments",
