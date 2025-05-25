@@ -17,6 +17,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "markdown-it-footnote": "^4.0.0",
     "markdown-it-mark": "^4.0.0",
     "vue": "^3.5.14"
   }

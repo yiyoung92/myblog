@@ -34,10 +34,4 @@ features:
     details: 本网站基于vitepress和开源项目nolebase快速搭建。
     icon: 🗃
 ---
-
----
-
-
-
-![[attachments/小脚.jpg|]]
-
+ 

@@ -7,6 +7,8 @@ import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
 import { nav,search,sidebar,vite } from './configs'
 // 引入mark 高亮插件
 import mark from 'markdown-it-mark'
+// 引入脚注插件
+import footnote_plugin from "markdown-it-footnote";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -36,7 +38,8 @@ export default defineConfig({
     config: (md) => {
       md.use(BiDirectionalLinks()) ,// 双链
       md.use(markdownItTaskCheckbox), //todo
-      md.use(mark) //mark高亮
+      md.use(mark), //mark高亮
+      md.use(footnote_plugin) //脚注
     },
     image: {
       // 开启图片懒加载
