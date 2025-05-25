@@ -1,2 +1,2 @@
-# blog4beginnerparents
-blog4beginnerparents
+# myblog
+用于记录我的学习成果并总结分享。

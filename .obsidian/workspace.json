@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "90dd002a3cea738a",
+        "id": "18c5062eb5013607",
         "type": "tabs",
         "children": [
           {
-            "id": "f8bbd9eb4aa53fb1",
+            "id": "284a4f0fb6178eaf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Rough Notes/搭建个人网站.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "搭建个人网站"
+              "title": "index"
             }
           }
         ]
@@ -136,13 +136,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 - Rough Notes/搭建个人网站.md",
+                "file": "index.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "搭建个人网站 的大纲"
+              "title": "index 的大纲"
             }
           },
           {
@@ -166,8 +166,8 @@
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ],
@@ -183,16 +183,23 @@
       "graph:查看关系图谱": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
+      "canvas:新建白板": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "media-extended:Open media": false,
-      "copilot:Open Copilot Chat": false,
-      "canvas:新建白板": false
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "f8bbd9eb4aa53fb1",
+  "active": "284a4f0fb6178eaf",
   "lastOpenFiles": [
+    "attachments/小脚.jpg",
+    "attachments/暴暴.jpg",
+    "attachments",
+    "README.md",
+    "index.md",
+    "markdown-examples.md",
+    "api-examples.md",
     "4 - Indexes/播客：新手爸妈.md",
     "2 - Source Material/Image&Vedio/宝宝的第一个视频（12周）.mp4",
     "1 - Rough Notes/搭建个人网站.md",
@@ -219,7 +226,6 @@
     "Pasted image 20250428154620.png",
     "Pasted image 20250428154947.png",
     "2 - Source Material/笔记插图/Pasted image 20250428093426.png",
-    "2 - Source Material/笔记插图/Pasted image 20250428093456.png",
     "1 - Rough Notes/AI-conversations/基于[[边缘AI_算力网络赋能全国产业园区智能升级]]，提炼并描述项目基本情况、开放场景及未来闭环思路@20250324_111656.md",
     "6 - Main Notes/Xinference使用.md",
     "1 - Rough Notes/AI实验室合作.md",
@@ -229,10 +235,6 @@
     "6 - Main Notes/Obsidian 入门学习.md",
     "1 - Rough Notes/未命名 1.md",
     "6 - Main Notes/Docker 学习.md",
-    "1 - Rough Notes/dify学习.md",
-    "6 - Main Notes/Git学习.md",
-    "6 - Main Notes/cursor 使用教程.md",
-    "1 - Rough Notes/Docker 学习.md",
     "1 - Rough Notes/AI-conversations",
     "2 - Source Material/卡片盒笔记写作法.pdf"
   ]
