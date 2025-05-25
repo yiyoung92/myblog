@@ -37,9 +37,7 @@ features:
 
 ---
 
-测试
 
-## ==测试==
 
-![[attachments/小脚.jpg]]
+![[attachments/小脚.jpg|]]
 
