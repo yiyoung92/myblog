@@ -9,105 +9,116 @@ import { nav,search,sidebar,vite } from './configs'
 import mark from 'markdown-it-mark'
 // 引入脚注插件
 import footnote_plugin from "markdown-it-footnote";
-
+// 引入mermaid插件
+import { withMermaid } from 'vitepress-plugin-mermaid'
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-  // 实现阅读增强 布局调整和聚光灯效果
-  vite,
-  lang: 'zh-CN',
-  title: "BeginnerParents",
-  description: "手爸妈的快乐花园，分享收获、记录生活",
-  cleanUrls: true, // 启用清洁URL
-  ignoreDeadLinks: true, //关闭忽略死链，不配置即可，非常不建议设置为true
-  lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳 //
-   //启用深色模式
-  appearance:'dark', 
+export default withMermaid(
+//因为mermaid插件使用，原export default defineConfig包在了withMermaid内，其他不变。
+  defineConfig({
+    // 实现阅读增强 布局调整和聚光灯效果
+    vite,
+    lang: 'zh-CN',
+    title: "BeginnerParents",
+    description: "手爸妈的快乐花园，分享收获、记录生活",
+    cleanUrls: true, // 启用清洁URL
+    ignoreDeadLinks: true, //关闭忽略死链，不配置即可，非常不建议设置为true
+    lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳 //
+    //启用深色模式
+    appearance:'dark', 
+      
+    //主题大图标
+    head: 
+    [
+      ['link',{ rel: 'icon', href: '/logo.png'}],  
+    ],    
     
-  //主题大图标
-  head: 
-  [
-    ['link',{ rel: 'icon', href: '/logo.png'}],  
-  ],    
-  
-  // 站点地图
-  sitemap: {
-    hostname: 'https://blog.beginnerparents.com',
-  },
-  
-  markdown: {
-    config: (md) => {
-      md.use(BiDirectionalLinks()) ,// 双链
-      md.use(markdownItTaskCheckbox), //todo
-      md.use(mark), //mark高亮
-      md.use(footnote_plugin) //脚注
+    // 站点地图
+    sitemap: {
+      hostname: 'https://blog.beginnerparents.com',
     },
-    image: {
-      // 开启图片懒加载
-      lazyLoading: true
-    },
-
-  },
-
-
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    //左上角网页标题隐藏 
-    //siteTitle: false, 
-    //左上角网页标题
-    siteTitle: '新手爸妈', 
-    //左上角logo
-    logo: '/logo.svg', 
-    //导航配置
-    nav,
-
-    //移动端深浅模式文字修改 //
-    darkModeSwitchLabel: '切换模式', 
-    //移动端侧边栏文字更改 //
-    sidebarMenuLabel:'目录', 
-    //移动端返回顶部文字修改 //
-    returnToTopLabel: '返回顶部',
-    //侧边栏配置
-    sidebar,
-
-    // 右侧边栏标题（大纲）
-    outline: { 
-      level: [2,4], // 显示2-4级标题
-      // level: 'deep', // 显示2-6级标题
-      label: '当前页大纲' // 文字显示
-    },
-    // outline:false, // 关闭标题显示
-    outlineTitle:'当前页大纲', //老方式设置标题
-    
-    // 社交链接及图标
-    socialLinks: [
-      {
-        icon: 'telegram',// 没法使用本地小宇宙图标，先随便用一个
-        link: 'https://www.xiaoyuzhoufm.com/podcast/669de5fe1ece2fb340e6c76f' // 小宇宙链接
+    //markdown配置
+    markdown: {
+      config: (md) => {
+        md.use(BiDirectionalLinks()) ,// 双链
+        md.use(markdownItTaskCheckbox), //todo
+        md.use(mark), //mark高亮
+        md.use(footnote_plugin) //脚注
       },
-    ],
-    
-    // 页脚 版权信息（可以考虑增加备案号信息）
-    footer: {
-      message: '2025 个人博客. All rights reserved. ',
-      copyright: 'Copyright © 2025-present Eason Young'
-    },
-    
-    
-    //本地搜索,并配置tags检索功能
-    search,
-
-    //上次更新时间 //
-    lastUpdated: {
-      text: '更新时间',
-      formatOptions: {
-        dateStyle: 'short', // 可选值full、long、medium、short
-        timeStyle: 'short' // 可选值full、long、medium、short
+      image: {
+        // 开启图片懒加载
+        lazyLoading: true
       },
+
+
     },
-    //自定义上下页名 //
-    docFooter: { 
-      prev: '上一页', 
-      next: '下一页', 
-    },   
-  }
-})
+    // mermaid配置
+    mermaid: {
+      // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+    }, 
+    // optionally set additional config for plugin itself with MermaidPluginConfig
+    mermaidPlugin: {
+      class: "mermaid my-class", // set additional css classes for parent container 
+    },
+    themeConfig: {
+      // https://vitepress.dev/reference/default-theme-config
+      //左上角网页标题隐藏 
+      //siteTitle: false, 
+      //左上角网页标题
+      siteTitle: '新手爸妈', 
+      //左上角logo
+      logo: '/logo.svg', 
+      //导航配置
+      nav,
+
+      //移动端深浅模式文字修改 //
+      darkModeSwitchLabel: '切换模式', 
+      //移动端侧边栏文字更改 //
+      sidebarMenuLabel:'目录', 
+      //移动端返回顶部文字修改 //
+      returnToTopLabel: '返回顶部',
+      //侧边栏配置
+      sidebar,
+
+      // 右侧边栏标题（大纲）
+      outline: { 
+        level: [2,4], // 显示2-4级标题
+        // level: 'deep', // 显示2-6级标题
+        label: '当前页大纲' // 文字显示
+      },
+      // outline:false, // 关闭标题显示
+      outlineTitle:'当前页大纲', //老方式设置标题
+      
+      // 社交链接及图标
+      socialLinks: [
+        {
+          icon: 'telegram',// 没法使用本地小宇宙图标，先随便用一个
+          link: 'https://www.xiaoyuzhoufm.com/podcast/669de5fe1ece2fb340e6c76f' // 小宇宙链接
+        },
+      ],
+      
+      // 页脚 版权信息（可以考虑增加备案号信息）
+      footer: {
+        message: '2025 个人博客. All rights reserved. ',
+        copyright: 'Copyright © 2025-present Eason Young'
+      },
+      
+      
+      //本地搜索,并配置tags检索功能
+      search,
+
+      //上次更新时间 //
+      lastUpdated: {
+        text: '更新时间',
+        formatOptions: {
+          dateStyle: 'short', // 可选值full、long、medium、short
+          timeStyle: 'short' // 可选值full、long、medium、short
+        },
+      },
+      //自定义上下页名 //
+      docFooter: { 
+        prev: '上一页', 
+        next: '下一页', 
+      },   
+    }
+  })
+)

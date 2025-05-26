@@ -1,10 +1,10 @@
 import DefaultTheme from 'vitepress/theme'
 import { useData } from 'vitepress'
-import './style/index.css'
-
+import "./style.css";
+import IndexList from './indexList.vue'
 
 import { h } from 'vue'
-import type { Theme as ThemeConfig } from 'vitepress'
+
 import { 
   NolebaseEnhancedReadabilitiesMenu, 
   NolebaseEnhancedReadabilitiesScreenMenu, 
@@ -50,7 +50,7 @@ export default {
       'doc-before': () => h(Tags)
     })
   },
-  enhanceApp({  }) {
-
+  enhanceApp({ app }) {
+    app.component('IndexList', IndexList)
   }
 }

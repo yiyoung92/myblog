@@ -1,16 +1,13 @@
 ---
-
-tags:
-- 索引列表
-
+layout: page
+title: 索引目录
+sidebar: ture
+date: 2025-05-26
+Link: ""
+tags: 
+- index
 ---
-# 知识库
-[[Computer Vision 机器视觉]]
 
-[[cursor 使用教程]]
-
-[[Data Cleaning 数据清洗]]
-
-[[dify学习]]
-
-[[Docker 学习]]
+<IndexList :link-list="['[[播客：新手爸妈]]']" />
+<!-- <IndexList :tag-list="['项目/播客新手爸妈']" /> -->
+<!-- <IndexList /> -->

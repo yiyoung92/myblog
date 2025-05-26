@@ -1,0 +1,30 @@
+/* todo list 美化 */
+@import './style/task-list.css';
+
+/* 主题美化 */
+@import './style/var.css';
+
+/* 代码块美化 */    
+@import './style/blockquote.css';
+
+/* 导航栏毛玻璃效果 */    
+@import './style/blur.css';
+
+/* markdown文件样式 */
+@import './style/markdownstyle.css';
+
+/* 导航栏样式样式调整 */
+@import './style/main.css'
+
+
+/* If not using Tailwind's build process, import the generated CSS instead */
+/* Example: */
+/* @import url('https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css'); */
+
+/* Add your custom styles below */
+/* 引用tailwind 组件*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

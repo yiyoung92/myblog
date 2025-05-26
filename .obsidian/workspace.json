@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "be9f4c7bb570d49f",
+        "id": "952a862dfe0b9d7a",
         "type": "tabs",
         "children": [
           {
-            "id": "4bd9ca75dd635e27",
+            "id": "ace90f2cd86bd798",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "页面测试.md",
+                "file": "播客：新手爸妈.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "页面测试"
+              "title": "播客：新手爸妈"
             }
           }
         ]
@@ -136,13 +136,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "页面测试.md",
+                "file": "播客：新手爸妈.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "页面测试 的大纲"
+              "title": "播客：新手爸妈 的大纲"
             }
           },
           {
@@ -191,18 +191,35 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "4bd9ca75dd635e27",
+  "active": "ace90f2cd86bd798",
   "lastOpenFiles": [
-    "index.md",
+    "03 新手爸妈播客/EP2 备孕二三事.md",
+    "播客：新手爸妈.md",
+    "01 知识库/index.md",
+    "node_modules/@tailwindcss",
+    "node_modules/@braintree",
+    "node_modules/@nolebase",
+    "node_modules",
+    "_tmp_52876_d945e6f1275149a67a8c866007ab120f",
+    "_tmp_42556_6cde7b732392492a71302ba1a5bb74de",
+    "postcss.config.cjs",
+    "postcss.config.js",
+    "tailwind.config.js",
+    "_tmp_2516_6b87eb788d9e4f30cfd68a180a4bb6b7",
+    "01 知识库/Docker 学习.md",
+    "01 知识库/dify学习.md",
+    "01 知识库/Data Cleaning 数据清洗.md",
+    "01 知识库/cursor 使用教程.md",
+    "01 知识库/Computer Vision 机器视觉.md",
+    "01 知识库/archives.md",
     "页面测试.md",
+    "index.md",
     "attachments/小脚.jpg",
     "attachments/暴暴.jpg",
-    "attachments",
     "README.md",
     "markdown-examples.md",
     "api-examples.md",
     "4 - Indexes/播客：新手爸妈.md",
-    "2 - Source Material/Image&Vedio/宝宝的第一个视频（12周）.mp4",
     "1 - Rough Notes/搭建个人网站.md",
     "1 - Rough Notes/Markdown扩展渲染.md",
     "6 - Main Notes/2025-3-17 光为交流会议.md",
@@ -225,17 +242,6 @@
     "2 - Source Material/笔记插图/Pasted image 20250324095903.png",
     "2 - Source Material/笔记插图/Pasted image 20250428093511.png",
     "Pasted image 20250428154620.png",
-    "Pasted image 20250428154947.png",
-    "1 - Rough Notes/AI-conversations/基于[[边缘AI_算力网络赋能全国产业园区智能升级]]，提炼并描述项目基本情况、开放场景及未来闭环思路@20250324_111656.md",
-    "6 - Main Notes/Xinference使用.md",
-    "1 - Rough Notes/AI实验室合作.md",
-    "6 - Main Notes/dify学习.md",
-    "6 - Main Notes/ollama学习.md",
-    "1 - Rough Notes/无人机业务手册.md",
-    "6 - Main Notes/Obsidian 入门学习.md",
-    "1 - Rough Notes/未命名 1.md",
-    "6 - Main Notes/Docker 学习.md",
-    "1 - Rough Notes/AI-conversations",
-    "2 - Source Material/卡片盒笔记写作法.pdf"
+    "Pasted image 20250428154947.png"
   ]
 }
