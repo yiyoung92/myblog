@@ -29,7 +29,7 @@ export default withMermaid(
     //主题大图标
     head: 
     [
-      ['link',{ rel: 'icon', href: '/logo.png'}],  
+      ['link',{ rel: 'icon', href: '/logo.svg'}],  
     ],    
     
     // 站点地图

@@ -24,30 +24,5 @@ gitChangelog: false
 
 [EP1 为什么策划这档节目](https://www.xiaoyuzhoufm.com/episode/66b60f72db5e6d6bf925bd2e)
 
-- [ ] 吃饭
-- [ ] 睡觉
-- [x] 打豆豆
-
-> 引用
-> 测试引用
-
-
-> [!NOTE] note
->
-> 测试容器块
-
-> [!tip] 提示
-> 测试容器块
-
-> [!warning] 警告
-> 测试容器块
-> 
-
-> [!danger] 危险
-> 测试容器块
-> 
-
-==测试高亮==
-
 
 [^1]: [EP1 为什么策划这档节目](https://www.xiaoyuzhoufm.com/episode/66b60f72db5e6d6bf925bd2e)
