@@ -1,7 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import { useData } from 'vitepress'
 import "./style.css";
-import IndexList from './indexList.vue'
+import IndexList from './IndexList.vue'
 
 import { h } from 'vue'
 
