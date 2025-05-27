@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "952a862dfe0b9d7a",
+        "id": "6b16a1cde4eb37a7",
         "type": "tabs",
         "children": [
           {
-            "id": "ace90f2cd86bd798",
+            "id": "fc56f0db62cf76f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "播客：新手爸妈.md",
+                "file": "03 新手爸妈播客/index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "播客：新手爸妈"
+              "title": "index"
             }
           }
         ]
@@ -136,13 +136,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "播客：新手爸妈.md",
+                "file": "03 新手爸妈播客/index.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "播客：新手爸妈 的大纲"
+              "title": "index 的大纲"
             }
           },
           {
@@ -175,7 +175,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 423.5
+    "width": 423.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,8 +192,11 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "ace90f2cd86bd798",
+  "active": "fc56f0db62cf76f4",
   "lastOpenFiles": [
+    "03 新手爸妈播客/index.md",
+    "03 新手爸妈播客/attachments/新手爸妈播客logo.png",
+    "03 新手爸妈播客/attachments",
     "03 新手爸妈播客/EP2 备孕二三事.md",
     "播客：新手爸妈.md",
     "01 知识库/index.md",
@@ -205,7 +209,6 @@
     "postcss.config.cjs",
     "postcss.config.js",
     "tailwind.config.js",
-    "_tmp_2516_6b87eb788d9e4f30cfd68a180a4bb6b7",
     "01 知识库/Docker 学习.md",
     "01 知识库/dify学习.md",
     "01 知识库/Data Cleaning 数据清洗.md",
@@ -230,7 +233,6 @@
     "6 - Main Notes/域名注册.md",
     "6 - Main Notes/数据分析.md",
     "6 - Main Notes/Machine Learning Lesson.md",
-    "6 - Main Notes/特征工程.md",
     "关于孩子的记录规划.canvas",
     "Untitled.canvas",
     "未命名.canvas",
@@ -241,7 +243,6 @@
     "2 - Source Material/工作素材/1a9a0ae5-3c6d-4bfd-b6a6-d530f7d51070.jpg",
     "2 - Source Material/笔记插图/Pasted image 20250324095903.png",
     "2 - Source Material/笔记插图/Pasted image 20250428093511.png",
-    "Pasted image 20250428154620.png",
-    "Pasted image 20250428154947.png"
+    "Pasted image 20250428154620.png"
   ]
 }
