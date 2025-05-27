@@ -77,8 +77,8 @@ const computedLinkMap = computed(()=> {
       </div>
     </template>
 
-    <!-- 如果 tagList 为空，再展示 linkList -->
-    <template v-else-if="linksToShow.length">
+    <!-- 展示 linkList -->
+    <template v-if="linksToShow.length">
       <div v-for="link in linksToShow" :key="link">
         <div v-text="link" class="pt-3 pb-2 text-xl font-serif"></div>
         <div v-for="(article, idx) in computedLinkMap[link]" :key="idx" class="flex justify-between items-center py-1 pl-6">
