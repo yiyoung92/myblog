@@ -78,3 +78,12 @@
   font-size: 0.85em;
   font-weight: 500;
 }
+
+/* 正文加粗文字颜色为暖红色 #ff6f61，不影响标题 */
+.VPDoc p strong,
+.VPDoc li strong,
+.VPDoc p b,
+.VPDoc li b {
+  color: #ff6f61;
+  font-weight: bold;
+}
