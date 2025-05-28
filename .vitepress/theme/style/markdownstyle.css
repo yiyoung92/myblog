@@ -87,3 +87,26 @@
   color: #ff6f61;
   font-weight: bold;
 }
+
+/* 视频插件适配屏幕宽度 */
+.responsive-iframe {
+  width: 100%;
+  max-width: 800px;   /* 可根据需要调整最大宽度 */
+  height: 56vw;       /* 16:9比例，高度自适应屏幕宽度 */
+  max-height: 450px;  /* 最大高度限制，可选 */
+  display: block;
+  margin: 1em auto;
+}
+@media (max-width: 600px) {
+  .responsive-iframe {
+    height: 56vw;     /* 保持16:9比例，适配手机 */
+    max-height: none;
+  }
+}
+
+/* 歌曲的插件在移动端直接折叠，因为网易云插件不支持移动端 */
+@media (max-width: 600px) {
+  .music-iframe {
+    display: none !important; /* 或者 height: 40px; 进行折叠 */
+  }
+}
