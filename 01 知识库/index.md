@@ -8,4 +8,4 @@ key-words:
 ---
 # 知识库
 
-<IndexList :link-list="['[[医学常识]]']"/> 
+<IndexList :link-list="['[[医学常识]]','[[运动]]']"/> 
