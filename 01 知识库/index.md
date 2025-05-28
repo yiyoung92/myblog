@@ -1,10 +1,11 @@
 ---
-layout: page
-title: 索引目录
-sidebar: ture
-date: 2025-05-26
-Link: ""
-tags: 
-- index
+title: index
+Link: 
+tags:
+  - Attribute/index
+date: 2025-05-28
+key-words:
 ---
- <IndexList :tag-list="['知识']" /> 
+# 知识库
+
+<IndexList :link-list="['[[医学常识]]']"/> 

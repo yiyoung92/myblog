@@ -15,7 +15,7 @@ hero:
       link: /01 知识库
     - theme: alt
       text: 资料档案
-      link: /02 资料档案
+      link: /02 资料库
     - theme: alt
       text: 收听播客节目
       link: https://www.xiaoyuzhoufm.com/podcast/669de5fe1ece2fb340e6c76f?s=eyJ1IjogIjYxMjA0ZWY1ZTBmNWU3MjNiYmVjN2NiMyJ9
