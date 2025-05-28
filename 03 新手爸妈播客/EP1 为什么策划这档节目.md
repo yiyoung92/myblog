@@ -3,9 +3,7 @@ title: EP1 为什么策划这档节目
 Link: "[[播客：新手爸妈]]"
 tags:
   - 项目/播客新手爸妈
-  - 测试
 date: 2024-08-09
-gitChangelog: false
 ---
 
 # EP1 为什么策划这档节目
