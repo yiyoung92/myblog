@@ -11,6 +11,8 @@ import mark from 'markdown-it-mark'
 import footnote_plugin from "markdown-it-footnote";
 // 引入mermaid插件
 import { withMermaid } from 'vitepress-plugin-mermaid'
+
+
 // https://vitepress.dev/reference/site-config
 export default withMermaid(
 //因为mermaid插件使用，原export default defineConfig包在了withMermaid内，其他不变。
@@ -93,7 +95,7 @@ export default withMermaid(
         {
           icon: 'telegram',// 没法使用本地小宇宙图标，先随便用一个
           link: 'https://www.xiaoyuzhoufm.com/podcast/669de5fe1ece2fb340e6c76f' // 小宇宙链接
-        },
+        },  
       ],
       
       // 页脚 版权信息（可以考虑增加备案号信息）

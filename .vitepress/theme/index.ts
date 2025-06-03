@@ -2,7 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import { useData } from 'vitepress'
 import "./style.css";
 import IndexList from './IndexList.vue'
-
+import Layout from './Layout.vue';
 import { h } from 'vue'
 
 import { 
@@ -20,6 +20,8 @@ import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 
 // mark 高亮特效
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
+// email复制图标
+import CopyMailIcon from './components/CopyMailIcon.vue'
 // 标签组件
 const Tags = () => {
   const { frontmatter } = useData()
@@ -40,7 +42,10 @@ export default {
     return h(DefaultTheme.Layout, null, {
       // 阅读增强菜单
       // 为较宽的屏幕的导航栏添加阅读增强菜单
-      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
+      'nav-bar-content-after': () => [
+        h(CopyMailIcon),
+        h(NolebaseEnhancedReadabilitiesMenu),
+      ],
       // 为较窄的屏幕（通常是小于 iPad Mini）添加阅读增强菜单
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       // 高亮目标标题
