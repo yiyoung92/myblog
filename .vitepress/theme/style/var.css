@@ -34,9 +34,14 @@
 
 /* 首页标题样式 */
 .VPHomeHero > .container > .main > h1 {
-  font-size: 5rem;
   font-family: 'Cabin-BoldItalic';
 }
+
+/* 只修改首页 hero 标题中 class="name clip" 的样式 */
+/* .VPHomeHero .name.clip {
+  font-size: 4rem !important;        
+  margin-bottom: 2rem !important;     
+} */
 
 /**
   主页 节目收听 链接按钮样式
