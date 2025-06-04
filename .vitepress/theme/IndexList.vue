@@ -69,7 +69,7 @@ const computedLinkMap = computed(()=> {
     <!-- 按tags展示 -->
     <template v-if="tagsToShow.length">
       <div v-for="tag in tagsToShow" :key="tag" class="mb-8">
-        <div class="pt-3 pb-2 text-xl font-serif">#{{ tag }}</div>
+        <div class="pt-3 pb-2 text-xl font-serif font-bold">{{ tag }}</div>
         <div v-for="(article, idx) in computedTagMap[tag]" :key="idx" class="flex justify-between items-center py-1 pl-6">
           <a v-text="article.title" :href="article.url" class="post-dot overflow-hidden whitespace-nowrap text-ellipsis underline" style="color: #b39ddb;"></a>
           <div v-text="article.date.string" class="pl-4 font-serif whitespace-nowrap"></div>
@@ -80,7 +80,10 @@ const computedLinkMap = computed(()=> {
     <!-- 展示 linkList -->
     <template v-if="linksToShow.length">
       <div v-for="link in linksToShow" :key="link">
-        <div v-text="link" class="pt-3 pb-2 text-xl font-serif"></div>
+        <div
+          class="pt-3 pb-2 text-xl font-serif font-bold"
+          v-text="link.replace(/^\[\[/, '').replace(/\]\]$/, '')"
+        ></div>
         <div v-for="(article, idx) in computedLinkMap[link]" :key="idx" class="flex justify-between items-center py-1 pl-6">
           <a v-text="article.title" :href="article.url" class="post-dot overflow-hidden whitespace-nowrap text-ellipsis underline" style="color: #b39ddb;"></a>
           <div v-text="article.date.string" class="pl-4 font-serif whitespace-nowrap"></div>
