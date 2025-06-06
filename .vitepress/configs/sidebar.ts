@@ -31,7 +31,7 @@ export const sidebar: DefaultTheme.Sidebar = generateSidebar({
     // useTitleFromFrontmatter: true,
     // frontmatterTitleFieldName: 'title',
     // useFolderTitleFromIndexFile: false, //是否使用层级首页文件名做分级标题
-    // useFolderLinkFromIndexFile: false, //是否链接至层级首页文件
+    useFolderLinkFromIndexFile: true, //是否链接至层级首页文件
     // hyphenToSpace: true,
     // underscoreToSpace: true,
     // capitalizeFirst: false,
@@ -46,7 +46,7 @@ export const sidebar: DefaultTheme.Sidebar = generateSidebar({
     sortMenusOrderNumericallyFromTitle: true,
     // sortMenusOrderNumericallyFromLink: false,
     // frontmatterOrderDefaultValue: 0,
-    // manualSortFileNameByPriority: ['知识库', '资料档案', '新手爸妈播客','dify学习.md'], //手动排序，文件夹不用带后缀
+    // manualSortFileNameByPriority: ['index.md'], //手动排序，文件夹不用带后缀
 
     removePrefixAfterOrdering: false, //删除前缀，必须与prefixSeparator一起使用
     prefixSeparator: '.', //删除前缀的符号
@@ -54,7 +54,7 @@ export const sidebar: DefaultTheme.Sidebar = generateSidebar({
     // excludeFilesByFrontmatterFieldName: 'exclude',
     // excludeFolders: ['secret-folder'],
     // includeDotFiles: false,
-    // includeRootIndexFile: false,
+    // includeRootIndexFile: false, //是否包含根目录主页
     // includeFolderIndexFile: false, //是否包含层级主页
     // includeEmptyFolder: false,
     // rootGroupText: 'Contents',
