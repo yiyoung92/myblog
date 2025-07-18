@@ -9,47 +9,41 @@
 /* markdown文件标题样式设置 */
 /* 白天模式（默认）暖红色 */
 .VPDoc h1 {
-  background: -webkit-linear-gradient(10deg, #ff6f61 95%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff6f61;
   font-family: 'Cabin-Bold', '思源黑体';
 }
 /* 黑夜模式 标题：蛋黄色 */
 .dark .VPDoc h1 {
-  background: -webkit-linear-gradient(10deg, #ffe082 95%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffe082;
   font-family: 'Cabin-Bold', '思源黑体';
 }
 
 
-
 /* h2 标题：青绿色 */
-.VPDoc h2 {
+/* 设置渐变色的语法，缺点是会改变emoji样式 */
+/* .VPDoc h2 {
   background: -webkit-linear-gradient(10deg, #34d399 10%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Cabin-Bold', '思源黑体';
+} */
+
+/* h2 标题：青绿色 */
+.VPDoc h2 {
+  color: #34d399;
+  font-family: 'Cabin-Bold', '思源黑体';
 }
 
 /* h3 标题：黄绿色 */
 .VPDoc h3 {
-  background: -webkit-linear-gradient(10deg, #ff9800 10%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff9800;
   font-family: 'Cabin-Bold', '思源黑体';
 }
 
 /* h3 黑夜模式 标题：橘色 */
 .dark .VPDoc h3 {
-  background: -webkit-linear-gradient(10deg, #bef264 10%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #bef264;
   font-family: 'Cabin-Bold', '思源黑体';
 }
 
